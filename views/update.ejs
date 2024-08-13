@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/createstyle.css" />
+  </head>
+  <body>
+        <div class="main">
+            <%-include('nav')%>
+            <h1>update page</h1>
+            <form action="/update/<%= user._id%>" method="post">
+              <input
+                name="name"
+                type="text"
+                placeholder="Enter Your Name"
+                value="<%=user.name%>"
+              />
+              <input
+                name="email"
+                type="email"
+                placeholder="Enter Your Email"
+                value="<%= user.email %>"
+              />
+              <input
+                name="password"
+                type="password"
+                placeholder="****"
+                value="<%= user.password%>"
+              />
+              <button>Update Profile</button>
+            </form>
+        </div>
+  </body>
+</html>

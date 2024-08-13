@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/createstyle.css">
+</head>
+<body>
+   <div class="main">
+    <%-include('nav')%>
+    <h1>Create Your Profile</h1>
+    <form action="/save" method="post">
+        <input name="name" type="text" placeholder="Enter Your Name">
+        <input name="email" type="email" placeholder="Enter Your Email">
+        <input name="password" type="password" placeholder="****">
+        <button>Create Profile</button>
+    </form>
+   </div>
+</body>
+</html>
